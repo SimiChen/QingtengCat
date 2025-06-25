@@ -244,8 +244,35 @@
             </div>
             
             <nav id="nav-content" class="hidden md:flex items-center mt-4 md:mt-0 space-x-10 text-sm font-medium">
-                <a href="#vision" class="text-gray-600 dark:text-gray-300 hover:text-brand-500 dark:hover:text-brand-400 transition duration-300 transform hover:-translate-y-1">愿景理念</a>
-                <a href="#features" class="text-gray-600 dark:text-gray-300 hover:text-brand-500 dark:hover:text-brand-400 transition duration-300 transform hover:-translate-y-1">特色服务</a>
+                <!-- 留学服务下拉菜单 -->
+                <div class="relative group">
+                    <button class="flex items-center text-gray-600 dark:text-gray-300 hover:text-brand-500 dark:hover:text-brand-400 transition duration-300 transform hover:-translate-y-1">
+                        留学服务
+                        <svg class="w-4 h-4 ml-1 transform group-hover:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <!-- 下拉菜单 -->
+                    <div class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-soft-lg border border-gray-200 dark:border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top scale-95 group-hover:scale-100 z-50">
+                        <div class="py-2">
+                            <a href="pages/undergraduate.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-brand-50 dark:hover:bg-brand-900/30 hover:text-brand-600 dark:hover:text-brand-300 transition duration-200 text-center">
+                                本科申请
+                            </a>
+                            <a href="pages/master.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-brand-50 dark:hover:bg-brand-900/30 hover:text-brand-600 dark:hover:text-brand-300 transition duration-200 text-center">
+                                硕士申请
+                            </a>
+                            <a href="pages/phd.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-brand-50 dark:hover:bg-brand-900/30 hover:text-brand-600 dark:hover:text-brand-300 transition duration-200 text-center">
+                                博士申请
+                            </a>
+                            <a href="pages/background.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-brand-50 dark:hover:bg-brand-900/30 hover:text-brand-600 dark:hover:text-brand-300 transition duration-200 text-center">
+                                背景提升
+                            </a>
+                            <a href="pages/language.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-brand-50 dark:hover:bg-brand-900/30 hover:text-brand-600 dark:hover:text-brand-300 transition duration-200 text-center">
+                                语言培训
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <a href="#process" class="text-gray-600 dark:text-gray-300 hover:text-brand-500 dark:hover:text-brand-400 transition duration-300 transform hover:-translate-y-1">服务流程</a>
                 <a href="#testimonials" class="text-gray-600 dark:text-gray-300 hover:text-brand-500 dark:hover:text-brand-400 transition duration-300 transform hover:-translate-y-1">成功案例</a>
                 
@@ -271,7 +298,19 @@
         <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-800 rounded-b-xl shadow-lg mt-2 mx-4 transition-all duration-500 ease-in-out overflow-hidden">
             <nav class="px-6 py-4 space-y-4 text-base">
                 <a href="#vision" class="block py-2 text-gray-600 dark:text-gray-300 hover:text-brand-500 dark:hover:text-brand-400 transition">愿景理念</a>
-                <a href="#features" class="block py-2 text-gray-600 dark:text-gray-300 hover:text-brand-500 dark:hover:text-brand-400 transition">特色服务</a>
+                
+                <!-- 移动端留学服务菜单 -->
+                <div class="space-y-2">
+                    <div class="text-sm font-medium text-gray-700 dark:text-gray-300 py-2">留学服务</div>
+                    <div class="pl-4 space-y-2">
+                        <a href="pages/undergraduate.html" class="block py-2 text-sm text-gray-600 dark:text-gray-300 hover:text-brand-500 dark:hover:text-brand-400 transition">本科申请</a>
+                        <a href="pages/master.html" class="block py-2 text-sm text-gray-600 dark:text-gray-300 hover:text-brand-500 dark:hover:text-brand-400 transition">硕士申请</a>
+                        <a href="pages/phd.html" class="block py-2 text-sm text-gray-600 dark:text-gray-300 hover:text-brand-500 dark:hover:text-brand-400 transition">博士申请</a>
+                        <a href="pages/background.html" class="block py-2 text-sm text-gray-600 dark:text-gray-300 hover:text-brand-500 dark:hover:text-brand-400 transition">背景提升</a>
+                        <a href="pages/language.html" class="block py-2 text-sm text-gray-600 dark:text-gray-300 hover:text-brand-500 dark:hover:text-brand-400 transition">语言培训</a>
+                    </div>
+                </div>
+                
                 <a href="#process" class="block py-2 text-gray-600 dark:text-gray-300 hover:text-brand-500 dark:hover:text-brand-400 transition">服务流程</a>
                 <a href="#testimonials" class="block py-2 text-gray-600 dark:text-gray-300 hover:text-brand-500 dark:hover:text-brand-400 transition">成功案例</a>
                 
@@ -1148,7 +1187,7 @@
             <p class="text-xl text-white text-opacity-90 mb-10 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
                 与青藤猫合作，让您的留学申请更加顺畅、高效，实现留学梦想！
             </p>
-            <a href="#contact" class="inline-block px-8 py-4 bg-white hover:bg-gray-100 text-brand-600 font-bold rounded-full transition duration-300 transform hover:-translate-y-1 hover:shadow-xl" data-aos="fade-up" data-aos-delay="200">
+            <a href="pages/contact.html" class="inline-block px-8 py-4 bg-white hover:bg-gray-100 text-brand-600 font-bold rounded-full transition duration-300 transform hover:-translate-y-1 hover:shadow-xl" data-aos="fade-up" data-aos-delay="200">
                 立即咨询
             </a>
         </div>
@@ -1228,7 +1267,31 @@
             </div>
             
             <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400">
-                <p>&copy; 2023 青藤猫教育咨询有限公司. 保留所有权利.</p>
+                <!-- 联系我们 Section（动态渲染，JSON数据） -->
+                <div class="w-full max-w-5xl mx-auto mb-12 text-left">
+                  <div class="bg-gray-900 rounded-lg p-8 flex flex-col md:flex-row md:space-x-8 text-gray-300">
+                    <!-- 城市列表 -->
+                    <div class="md:w-1/6 mb-8 md:mb-0">
+                      <ul id="contact-city-list" class="space-y-3 text-base">
+                        <!-- 动态插入城市 -->
+                      </ul>
+                    </div>
+                    <!-- 联系方式 -->
+                    <div class="md:w-7/12 border-l border-gray-700 px-0 md:px-8 mb-8 md:mb-0">
+                      <div id="contact-info-block">
+                        <!-- 动态插入联系信息 -->
+                      </div>
+                    </div>
+                    <!-- 客服信息 -->
+                    <div class="md:w-1/4 border-l border-gray-700 pl-0 md:pl-6 flex flex-col justify-center">
+                      <div id="contact-service-block">
+                        <!-- 动态插入客服信息 -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="border-t border-gray-800 my-4">
+                <p>&copy; 2023 青藤猫教育咨询有限公司. All copyright.</p>
             </div>
         </div>
     </footer>
@@ -1327,53 +1390,105 @@
                     }
                 });
             });
-            
-            // Handle form submission
-            const contactForm = document.getElementById('contactForm');
-            const submitBtn = document.getElementById('submitBtn');
-            const submitText = document.getElementById('submitText');
-            const submitSpinner = document.getElementById('submitSpinner');
-            
-            contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                // Get form data
-                const name = document.getElementById('name').value;
-                const email = document.getElementById('email').value;
-                const phone = document.getElementById('phone').value;
-                const service = document.getElementById('service').value;
-                const message = document.getElementById('message').value;
-                
-                // Validate form
-                if (!name || !email || !phone || !message) {
-                    alert('请填写所有必填字段');
-                    return;
-                }
-                
-                // Show loading state
-                submitText.textContent = '提交中...';
-                submitBtn.disabled = true;
-                submitSpinner.classList.remove('hidden');
-                
-                // Simulate form submission (in a real app, this would be an AJAX request)
-                setTimeout(function() {
-                    // Success state
-                    submitText.textContent = '提交成功！';
-                    submitBtn.classList.remove('bg-brand-500');
-                    submitBtn.classList.add('bg-green-500');
-                    submitSpinner.classList.add('hidden');
-                    
-                    // Reset form after delay
-                    setTimeout(function() {
-                        contactForm.reset();
-                        submitText.textContent = '提交咨询';
-                        submitBtn.disabled = false;
-                        submitBtn.classList.remove('bg-green-500');
-                        submitBtn.classList.add('bg-brand-500');
-                    }, 3000);
-                }, 1500);
-            });
         });
+    </script>
+
+    <script>
+    // 联系方式数据（支持多个地址和电话）
+    const contactData = {
+      '深圳': {
+        address: [
+          '深圳市南山区科技园南区深圳湾科技生态园10栋A座',
+          '深圳市福田区深南大道10000号创新大厦5楼'
+        ],
+        tel: [
+          '0755-8888-8888',
+          '0755-6666-6666'
+        ],
+        service: {
+          email: 'shenzhen@qingtengcat.com',
+          hotline: '400-006-2153',
+          wechat: 'szqingtengcat'
+        }
+      },
+      '成都': {
+        address: [
+          '成都市高新区天府大道中段天府软件园C区8栋'
+        ],
+        tel: [
+          '028-8888-8888'
+        ],
+        service: {
+          email: 'chengdu@qingtengcat.com',
+          hotline: '400-006-2153',
+          wechat: 'cdqingtengcat'
+        }
+      },
+      '香港': {
+        address: [
+          '香港中环金融街8号国际金融中心二期'
+        ],
+        tel: [
+          '852-8888-8888'
+        ],
+        service: {
+          email: 'hongkong@qingtengcat.com',
+          hotline: '400-006-2153',
+          wechat: 'hkqingtengcat'
+        }
+      }
+    };
+
+    const cityList = Object.keys(contactData);
+    const cityListEl = document.getElementById('contact-city-list');
+    const infoBlock = document.getElementById('contact-info-block');
+    const serviceBlock = document.getElementById('contact-service-block');
+    let currentCity = cityList[0];
+
+    function renderCityList() {
+      cityListEl.innerHTML = '';
+      cityList.forEach(city => {
+        const li = document.createElement('li');
+        li.textContent = city;
+        li.className = 'cursor-pointer city-item' + (city === currentCity ? ' font-bold text-white active' : '');
+        li.onclick = () => {
+          currentCity = city;
+          renderCityList();
+          renderContactInfo();
+          renderServiceInfo();
+        };
+        cityListEl.appendChild(li);
+      });
+    }
+
+    function renderContactInfo() {
+      const data = contactData[currentCity];
+      let html = '';
+      for (let i = 0; i < data.address.length; i++) {
+        html += `
+          <div class="mb-2 text-sm text-gray-400">
+            <div>ADD: ${data.address[i]}</div>
+            <div>TEL: ${data.tel[i] || ''}</div>
+          </div>
+          <div class="mb-4"></div>
+        `;
+      }
+      infoBlock.innerHTML = html;
+    }
+
+    function renderServiceInfo() {
+      const s = contactData[currentCity].service;
+      serviceBlock.innerHTML = `
+        <div class="mb-2 text-sm text-gray-400 flex items-center"><span style="min-width:70px;">邮箱：</span><span>${s.email}</span></div>
+        <div class="mb-2 text-sm text-gray-400 flex items-center"><span style="min-width:70px;">Hotline：</span><span>${s.hotline}</span></div>
+        <div class="mb-2 text-sm text-gray-400 flex items-center"><span style="min-width:70px;">微信：</span><span>${s.wechat}</span></div>
+      `;
+    }
+
+    // 初始化
+    renderCityList();
+    renderContactInfo();
+    renderServiceInfo();
     </script>
 </body>
 </html>

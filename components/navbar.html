@@ -24,6 +24,37 @@
         
         <nav id="nav-content" class="hidden md:flex items-center mt-4 md:mt-0 space-x-10 text-sm font-medium">
             <a href="../index.html" class="text-gray-600 dark:text-gray-300 hover:text-brand-500 dark:hover:text-brand-400 transition duration-300 transform hover:-translate-y-1">首页</a>
+            
+            <!-- 留学服务下拉菜单 -->
+            <div class="relative group">
+                <button class="flex items-center text-gray-600 dark:text-gray-300 hover:text-brand-500 dark:hover:text-brand-400 transition duration-300 transform hover:-translate-y-1">
+                    留学服务
+                    <svg class="w-4 h-4 ml-1 transform group-hover:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <!-- 下拉菜单 -->
+                <div class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-48 bg-white dark:bg-gray-800 rounded-lg shadow-soft-lg border border-gray-200 dark:border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top scale-95 group-hover:scale-100 z-50">
+                    <div class="py-2">
+                        <a href="undergraduate.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-brand-50 dark:hover:bg-brand-900/30 hover:text-brand-600 dark:hover:text-brand-300 transition duration-200 text-center">
+                            本科申请
+                        </a>
+                        <a href="master.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-brand-50 dark:hover:bg-brand-900/30 hover:text-brand-600 dark:hover:text-brand-300 transition duration-200 text-center">
+                            硕士申请
+                        </a>
+                        <a href="phd.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-brand-50 dark:hover:bg-brand-900/30 hover:text-brand-600 dark:hover:text-brand-300 transition duration-200 text-center">
+                            博士申请
+                        </a>
+                        <a href="background.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-brand-50 dark:hover:bg-brand-900/30 hover:text-brand-600 dark:hover:text-brand-300 transition duration-200 text-center">
+                            背景提升
+                        </a>
+                        <a href="language.html" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-brand-50 dark:hover:bg-brand-900/30 hover:text-brand-600 dark:hover:text-brand-300 transition duration-200 text-center">
+                            语言培训
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
             <a href="services.html" class="text-gray-600 dark:text-gray-300 hover:text-brand-500 dark:hover:text-brand-400 transition duration-300 transform hover:-translate-y-1">服务项目</a>
             <a href="about.html" class="text-gray-600 dark:text-gray-300 hover:text-brand-500 dark:hover:text-brand-400 transition duration-300 transform hover:-translate-y-1">关于我们</a>
             
@@ -49,6 +80,19 @@
     <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-800 rounded-b-xl shadow-lg mt-2 mx-4 transition-all duration-500 ease-in-out overflow-hidden">
         <nav class="px-6 py-4 space-y-4 text-base">
             <a href="../index.html" class="block py-2 text-gray-600 dark:text-gray-300 hover:text-brand-500 dark:hover:text-brand-400 transition">首页</a>
+            
+            <!-- 移动端留学服务菜单 -->
+            <div class="space-y-2">
+                <div class="text-sm font-medium text-gray-700 dark:text-gray-300 py-2">留学服务</div>
+                <div class="pl-4 space-y-2">
+                    <a href="undergraduate.html" class="block py-2 text-sm text-gray-600 dark:text-gray-300 hover:text-brand-500 dark:hover:text-brand-400 transition">本科申请</a>
+                    <a href="master.html" class="block py-2 text-sm text-gray-600 dark:text-gray-300 hover:text-brand-500 dark:hover:text-brand-400 transition">硕士申请</a>
+                    <a href="phd.html" class="block py-2 text-sm text-gray-600 dark:text-gray-300 hover:text-brand-500 dark:hover:text-brand-400 transition">博士申请</a>
+                    <a href="background.html" class="block py-2 text-sm text-gray-600 dark:text-gray-300 hover:text-brand-500 dark:hover:text-brand-400 transition">背景提升</a>
+                    <a href="language.html" class="block py-2 text-sm text-gray-600 dark:text-gray-300 hover:text-brand-500 dark:hover:text-brand-400 transition">语言培训</a>
+                </div>
+            </div>
+            
             <a href="services.html" class="block py-2 text-gray-600 dark:text-gray-300 hover:text-brand-500 dark:hover:text-brand-400 transition">服务项目</a>
             <a href="about.html" class="block py-2 text-gray-600 dark:text-gray-300 hover:text-brand-500 dark:hover:text-brand-400 transition">关于我们</a>
             
