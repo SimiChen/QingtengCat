@@ -964,6 +964,7 @@
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="{{ url_for('static', filename='js/darkMode.js') }}"></script>
     <script>
         // Initialize AOS
         document.addEventListener('DOMContentLoaded', function() {
@@ -998,17 +999,6 @@
             menuToggle.addEventListener('click', function() {
                 mobileMenu.classList.toggle('hidden');
             });
-            
-            // Dark mode toggle
-            const darkModeToggle = document.getElementById('darkModeToggle');
-            const mobileDarkModeToggle = document.getElementById('mobileDarkModeToggle');
-            
-            function toggleDarkMode() {
-                document.documentElement.classList.toggle('dark');
-            }
-            
-            darkModeToggle.addEventListener('click', toggleDarkMode);
-            mobileDarkModeToggle.addEventListener('click', toggleDarkMode);
             
             // Smooth scrolling for anchors
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {

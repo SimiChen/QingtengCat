@@ -172,16 +172,10 @@
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script src="{{ url_for('static', filename='js/navbar.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/darkMode.js') }}"></script>
     <script>
         // Initialize AOS
         document.addEventListener('DOMContentLoaded', function() {
-            // Initialize dark mode
-            if (localStorage.getItem('darkMode') === 'true' || 
-                (!localStorage.getItem('darkMode') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-                document.documentElement.classList.add('dark');
-            }
-
             AOS.init({
                 duration: 800,
                 once: true,

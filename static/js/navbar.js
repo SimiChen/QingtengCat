@@ -21,22 +21,6 @@ async function loadNavbar() {
             newScript.textContent = script.textContent;
             document.body.appendChild(newScript);
         }
-
-        // Initialize dark mode toggle functionality
-        const darkModeToggle = document.getElementById('darkModeToggle');
-        const mobileDarkModeToggle = document.getElementById('mobileDarkModeToggle');
-        
-        function toggleDarkMode() {
-            const isDark = document.documentElement.classList.toggle('dark');
-            localStorage.setItem('darkMode', isDark);
-        }
-        
-        if (darkModeToggle) {
-            darkModeToggle.addEventListener('click', toggleDarkMode);
-        }
-        if (mobileDarkModeToggle) {
-            mobileDarkModeToggle.addEventListener('click', toggleDarkMode);
-        }
     } catch (error) {
         console.error('Error loading navbar:', error);
     }
