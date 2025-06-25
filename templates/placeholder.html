@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} | 青藤猫</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/shared.css') }}" />
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f5f5ff',
+                            100: '#ececff',
+                            200: '#d9d9ff',
+                            300: '#b3b2ff',
+                            400: '#8c8bea',
+                            500: '#5D5CDE',
+                            600: '#4a49b9',
+                            700: '#3c3b94',
+                            800: '#2d2d70',
+                            900: '#1e1e4b'
+                        },
+                        accent: {
+                            50: '#eeffee',
+                            100: '#d7ffd7',
+                            200: '#b0ffb0',
+                            300: '#88ff88',
+                            400: '#55dd55',
+                            500: '#4CAF50',
+                            600: '#3d8c40',
+                            700: '#2e6930',
+                            800: '#1f4720',
+                            900: '#0f2310'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Source Sans Pro"', '"Noto Sans SC"', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                        display: ['"Montserrat"', '"Noto Sans SC"', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                        serif: ['"Noto Serif SC"', 'serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px rgba(0, 0, 0, 0.08)',
+                        'soft-lg': '0 10px 30px rgba(0, 0, 0, 0.1)',
+                        'inner-soft': 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
+    <!-- Progress bar -->
+    <div class="progress-bar"></div>
+    
+    {% include 'components/navbar.html' %}
+    
+    <div class="pt-32 pb-24">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <h1 class="text-4xl font-bold mb-4">{{ title }}</h1>
+                <p class="text-gray-600 dark:text-gray-300 mb-8">{{ description }}</p>
+                <div class="bg-gray-100 dark:bg-gray-800 rounded-lg p-8">
+                    <p class="text-lg">此页面正在建设中，敬请期待...</p>
+                    <a href="{{ url_for('contact') }}" class="inline-block mt-4 px-6 py-2 bg-brand-500 text-white rounded-lg hover:bg-brand-600 transition duration-300">
+                        联系我们咨询详情
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    {% include 'components/footer.html' %}
+</body>
+</html> 
