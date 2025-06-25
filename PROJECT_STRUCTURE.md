@@ -16,6 +16,8 @@
 qingtengcat/
 ├── app.py                          # Flask主应用文件
 ├── demo.html                       # 演示文件
+├── requirements.txt                # Python依赖包列表（完整版）
+├── requirements-minimal.txt        # Python依赖包列表（最小版）
 ├── PROJECT_STRUCTURE.md            # 项目结构文档
 │
 ├── .idea/                          # PyCharm IDE配置
@@ -178,6 +180,16 @@ qingtengcat/
   - 其他服务路由 (服务项目、关于我们等)
   - 法律信息相关路由 (隐私政策、服务条款等)
 
+### 依赖管理文件
+- **requirements.txt**: 完整版Python依赖包列表
+  - 包含Flask及其所有子依赖
+  - 包含未来可能需要的扩展包（已注释）
+  - 适用于开发和测试环境
+- **requirements-minimal.txt**: 最小版Python依赖包列表
+  - 只包含当前项目实际使用的Flask
+  - 适用于生产环境部署
+  - 减少不必要的依赖包
+
 ### 前端模板
 - **index.html**: 网站首页，包含完整的营销内容
 - **contact.html**: 联系我们页面，包含联系表单
@@ -222,19 +234,47 @@ qingtengcat/
 
 ## 运行方式
 
-1. 安装Python依赖：
+### 1. 安装Python依赖
+
+#### 方式一：使用完整版依赖（推荐用于开发）
+```bash
+pip install -r requirements.txt
+```
+
+#### 方式二：使用最小版依赖（推荐用于生产）
+```bash
+pip install -r requirements-minimal.txt
+```
+
+#### 方式三：手动安装Flask
 ```bash
 pip install flask
 ```
 
-2. 运行应用：
+### 2. 运行应用
 ```bash
 python app.py
 ```
 
-3. 访问网站：
+### 3. 访问网站
 ```
 http://localhost:5000
+```
+
+### 4. 开发模式
+应用默认运行在开发模式（debug=True），支持：
+- 热重载（代码修改后自动重启）
+- 详细的错误信息
+- 调试工具栏
+
+### 5. 生产部署
+生产环境建议：
+```bash
+# 安装生产服务器
+pip install gunicorn
+
+# 运行生产服务器
+gunicorn -w 4 -b 0.0.0.0:5000 app:app
 ```
 
 ## 开发说明
